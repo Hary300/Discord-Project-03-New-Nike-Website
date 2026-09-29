@@ -1,10 +1,10 @@
-interface NavLink {
+export interface NavLink {
   id: string;
   label: string;
   url: string;
 }
 
-interface NavigationSection {
+export interface NavigationSection {
   title: string;
   items: NavLink[];
 }

@@ -11,7 +11,7 @@ import { headerData } from '@/data/headerData';
 const MobileNav = () => {
   const userNav = headerData.userNavigation;
   return (
-    <div className=' md:hidden'>
+    <div className='md:hidden'>
       <Sheet>
         <SheetTrigger asChild>
           <Button variant='ghost' className='px-0 h-auto rounded-0 flex'>
