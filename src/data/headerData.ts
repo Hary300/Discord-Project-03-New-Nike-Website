@@ -7,7 +7,8 @@ import cartIcon from '@/assets/images/cart.png';
 interface BrandItem {
   id: string;
   name: string;
-  logoUrl: string;
+  logoSrc: string;
+  altText: string;
   url: string;
 }
 
@@ -18,7 +19,8 @@ interface UserNavItem {
 }
 
 interface Cart {
-  cartIcon: string;
+  cartIconSrc: string;
+  altText: string;
   url: string;
 }
 
@@ -33,25 +35,29 @@ export const headerData: HeaderData = {
     {
       id: 'nike',
       name: 'Nike',
-      logoUrl: nikeLogo,
+      logoSrc: nikeLogo,
+      altText: 'Nike Swoosh Logo',
       url: 'https://www.nike.com',
     },
     {
       id: 'converse',
       name: 'Converse',
-      logoUrl: converseLogo,
+      logoSrc: converseLogo,
+      altText: 'Converse Star Logo',
       url: 'https://www.converse.com',
     },
     {
       id: 'jordan',
       name: 'Jordan',
-      logoUrl: airjordanLogo,
+      logoSrc: airjordanLogo,
+      altText: 'Air Jordan Jumpman Logo',
       url: 'https://www.nike.com/jordan',
     },
     {
       id: 'hurley',
       name: 'Hurley',
-      logoUrl: hurleyLogo,
+      logoSrc: hurleyLogo,
+      altText: 'Hurley Logo',
       url: 'https://www.hurley.com',
     },
   ],
@@ -68,7 +74,8 @@ export const headerData: HeaderData = {
     },
   ],
   cart: {
-    cartIcon: cartIcon,
+    cartIconSrc: cartIcon,
+    altText: 'cart icon',
     url: '/cart',
   },
 };
