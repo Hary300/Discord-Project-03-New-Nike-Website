@@ -30,7 +30,7 @@ const PromoTwo = () => {
         </h2>
       </div>
 
-      <div className='absolute z-10 max-w-35 sm:max-w-60 lg:max-w-70 top-[clamp(15%,calc(15%+5vw),20%)] sm:top-1/3 right-[5%] lg:right-[34%] xl:right-[45%] lg:top-[20%]'>
+      <div className='absolute z-10 max-w-35 sm:max-w-60 lg:max-w-70 top-[clamp(15%,calc(15%+5vw),20%)] sm:top-1/3 lg:top-[20%] right-[5%] lg:right-[34%] xl:right-[45%] '>
         <img
           src={promotionTwo.productImage.src}
           alt={promotionTwo.productImage.alt}
