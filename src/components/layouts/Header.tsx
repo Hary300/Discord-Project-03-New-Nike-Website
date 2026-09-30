@@ -7,7 +7,7 @@ const Header = () => {
   const userNav = headerData.userNavigation;
   const cart = headerData.cart;
   return (
-    <header className='flex justify-between items-center px-4 sm:px-10 lg:px-15 xl:px-30 py-2.5'>
+    <header className='flex justify-between items-center px-4 sm:px-10 lg:px-15 xl:px-30 py-2.5 border-b md:border-0'>
       <div className='flex gap-2 md:gap-4 items-center'>
         {brands.map((brand, index) => (
           <div

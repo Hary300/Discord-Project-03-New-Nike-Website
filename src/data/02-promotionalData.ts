@@ -15,17 +15,18 @@ interface CTAButton {
   url: string;
 }
 
-interface PromotionCard {
+export interface Promotion {
   id: string;
   title: string;
   subtitle?: string;
   cta: CTAButton;
   productImage: ImageAsset;
-  actionImage?: ImageAsset;
+  modelImage?: ImageAsset;
+  layout: 'left' | 'right' | 'center-right';
 }
 
 interface PromotionalSectionData {
-  promotions: PromotionCard[];
+  promotions: Promotion[];
 }
 
 export const promotionalSectionData: PromotionalSectionData = {
@@ -41,10 +42,11 @@ export const promotionalSectionData: PromotionalSectionData = {
         src: redRunningShoesImg,
         alt: 'Red Nike Running Shoes',
       },
-      actionImage: {
+      modelImage: {
         src: basketballPlayerImg,
         alt: 'Basketball Player Jumping for a Dunk',
       },
+      layout: 'left',
     },
     {
       id: 'promo-hurley',
@@ -57,10 +59,11 @@ export const promotionalSectionData: PromotionalSectionData = {
         src: hurleyFlipFlopsImg,
         alt: 'Black Hurley Flip-Flops',
       },
-      actionImage: {
+      modelImage: {
         src: surferActionImg,
         alt: 'Surfer Riding a Wave',
       },
+      layout: 'right',
     },
     {
       id: 'promo-converse',
@@ -73,10 +76,11 @@ export const promotionalSectionData: PromotionalSectionData = {
         src: converseHighTopImg,
         alt: 'Black and White High-Top Converse Shoes',
       },
-      actionImage: {
+      modelImage: {
         src: skateboarderActionImg,
         alt: 'Skateboarder Performing a Mid-Air Trick',
       },
+      layout: 'center-right',
     },
   ],
 };
