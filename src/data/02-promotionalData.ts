@@ -1,9 +1,16 @@
-import redRunningShoesImg from '@/assets/images/poducts/nikeRedShoe.png';
-import basketballPlayerImg from '@/assets/images/model/basketballPlayer.png';
-import hurleyFlipFlopsImg from '@/assets/images/poducts/filpFlop.png';
-import surferActionImg from '@/assets/images/model/surfer.png';
-import converseHighTopImg from '@/assets/images/poducts/converseShoe.png';
-import skateboarderActionImg from '@/assets/images/model/skater.png';
+import redRunningShoesImg from '@/assets/images/poducts/nikeRedShoe.webp';
+import basketballPlayerImg from '@/assets/images/model/basketballPlayer.webp';
+import hurleyFlipFlopsImg from '@/assets/images/poducts/filpFlop.webp';
+import surferActionImg from '@/assets/images/model/surfer.webp';
+import converseHighTopImg from '@/assets/images/poducts/converseShoe.webp';
+import skateboarderActionImg from '@/assets/images/model/skater.webp';
+
+// import redRunningShoesImg from '@/assets/images/poducts/nikeRedShoe.png';
+// import basketballPlayerImg from '@/assets/images/model/basketballPlayer.png';
+// import hurleyFlipFlopsImg from '@/assets/images/poducts/filpFlop.png';
+// import surferActionImg from '@/assets/images/model/surfer.png';
+// import converseHighTopImg from '@/assets/images/poducts/converseShoe.png';
+// import skateboarderActionImg from '@/assets/images/model/skater.png';
 
 interface ImageAsset {
   src: string;

@@ -7,7 +7,7 @@ const PromoThree = () => {
   console.log(prefix);
 
   return (
-    <div className='relative flex flex-col lg:flex-row lg:justify-between gap-10 lg:items-start font-Oswald font-bold h-auto max-w-290 pl-4 pr-4 sm:pl-10 sm:pr-10 lg:pl-15 lg:pr-15 xl:pl-30 xl:pr-0'>
+    <div className='relative flex flex-col lg:flex-row lg:justify-between gap-10 lg:items-start font-Oswald font-bold h-auto max-w-300 pl-4 pr-4 sm:pl-10 sm:pr-10 lg:pl-15 lg:pr-15 xl:pl-30 xl:pr-0'>
       <div className='w-[clamp(12.5rem,62.5vw,22.5rem)] sm:w-auto sm:max-w-115'>
         <img
           src={promotionThree.modelImage?.src}
@@ -31,7 +31,7 @@ const PromoThree = () => {
         </h2>
       </div>
 
-      <div className='absolute z-10 max-w-35 sm:max-w-70 xl:max-w-100 bottom-[60%] md:bottom-[50%] lg:bottom-[20%] xl:bottom-[-5%] right-[5%] lg:right-[5%] xl:right-[-10%]'>
+      <div className='absolute z-10 max-w-35 sm:max-w-50 md:max-w-70 xl:max-w-100 bottom-[70%] md:bottom-[50%] lg:bottom-[20%] xl:bottom-[-5%] right-[5%] lg:right-[5%] xl:right-[-10%]'>
         <img
           src={promotionThree.productImage.src}
           alt={promotionThree.productImage.alt}
