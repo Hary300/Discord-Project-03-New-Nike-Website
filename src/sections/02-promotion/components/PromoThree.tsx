@@ -19,7 +19,7 @@ const PromoThree = () => {
       <div className='z-10 flex sm:min-w-100'>
         <h2 className='text-[clamp(3.25rem,5.08vw,4.1875rem)] xl:text-[clamp(3.6875rem,4.61vw,5rem)] font-extrabold text-black  uppercase tracking-widest flex flex-col items-end ml-auto'>
           {prefix}
-          <div className='flex gap-2 items-end flex-col-reverse sm:flex-row'>
+          <div className='flex gap-2 items-end flex-col-reverse sm:flex-row sm:items-center'>
             <a
               href='#'
               className='items-center bg-[#0f5323] hover:bg-[#0b3e1a] text-white leading-none p-1.5 w-fit'
