@@ -34,7 +34,7 @@ const NavMenu = () => {
                       <ListItem
                         key={section.title}
                         title={section.title}
-                        navLinks={section.items}
+                        Items={section.items}
                       />
                     ))}
                   </ul>

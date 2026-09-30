@@ -7,6 +7,7 @@ import {
 } from '@/components/ui/sheet';
 import { Button } from '../ui/button';
 import { headerData } from '@/data/headerData';
+import MobileMegaMenu from './MobileMegaMenu';
 
 const MobileNav = () => {
   const userNav = headerData.userNavigation;
@@ -22,9 +23,10 @@ const MobileNav = () => {
           <div className='flex flex-col gap-4 p-8'>
             {userNav.map((item) => (
               <SheetClose key={item.id} asChild>
-                <p>{item.label}</p>
+                <p className='cursor-pointer hover:underline'>{item.label}</p>
               </SheetClose>
             ))}
+            <MobileMegaMenu />
           </div>
         </SheetContent>
       </Sheet>

@@ -1,23 +1,23 @@
-export interface NavLink {
+export interface Item {
   id: string;
   label: string;
   url: string;
 }
 
-export interface NavigationSection {
+export interface Section {
   title: string;
-  items: NavLink[];
+  items: Item[];
 }
 
-interface MainCategory {
+export interface Category {
   id: string;
   label: string;
   url: string;
-  sections?: NavigationSection[];
+  sections?: Section[];
 }
 
 interface MegaMenuData {
-  categories: MainCategory[];
+  categories: Category[];
 }
 
 export const megaMenuData: MegaMenuData = {
