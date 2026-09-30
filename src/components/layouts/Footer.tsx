@@ -3,8 +3,8 @@ import { footerData } from '@/data/footerData';
 const Footer = () => {
   const { copyright, featuredLinks, sections, socials } = footerData;
   return (
-    <footer className='flex flex-col gap-6 py-6 sm:gap-12 sm:py-12 bg-dark-gray text-white'>
-      <div className='px-4 sm:px-10 lg:px-15 xl:px-30 flex flex-col md:flex-row md:justify-between items-center gap-10'>
+    <footer className='flex flex-col bg-dark-gray text-white'>
+      <div className='px-4 sm:px-10 lg:px-15 xl:px-30 flex flex-col md:flex-row md:justify-between items-center gap-10 py-6 sm:py-12'>
         <div className='flex flex-col sm:flex-row gap-8 items-start sm:justify-center md:justify-between w-full max-w-150'>
           <ul className='flex flex-col gap-2'>
             {featuredLinks.map((link) => (
@@ -41,7 +41,9 @@ const Footer = () => {
 
       <div className='h-px w-full bg-light-gray' />
 
-      <p className='px-4 sm:px-10 lg:px-15 xl:px-30 '>{copyright}</p>
+      <p className='py-6 sm:py-4 px-4 sm:px-10 lg:px-15 xl:px-30 '>
+        {copyright}
+      </p>
     </footer>
   );
 };
