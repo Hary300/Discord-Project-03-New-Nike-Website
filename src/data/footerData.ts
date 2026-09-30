@@ -12,8 +12,8 @@ interface FooterLink {
   url: string;
 }
 
-interface FooterColumn {
-  title?: string;
+interface FooterSection {
+  title: string;
   links: FooterLink[];
 }
 
@@ -25,25 +25,20 @@ interface SocialLink {
 }
 
 interface FooterData {
-  columns: FooterColumn[];
+  featuredLinks: FooterLink[];
+  sections: FooterSection[];
   socials: SocialLink[];
   copyright: string;
 }
 
 export const footerData: FooterData = {
-  columns: [
-    {
-      links: [
-        { id: 'find-store', label: 'FIND A STORE', url: '/find-a-store' },
-        {
-          id: 'signup-email',
-          label: 'SIGN UP FOR A EMAIL',
-          url: '/email-signup',
-        },
-        { id: 'join-nike', label: 'JOIN NIKE+', url: '/nike-plus' },
-        { id: 'site-feedback', label: 'SITE FEEDBACK', url: '/feedback' },
-      ],
-    },
+  featuredLinks: [
+    { id: 'find-store', label: 'FIND A STORE', url: '/find-a-store' },
+    { id: 'signup-email', label: 'SIGN UP FOR AN EMAIL', url: '/email-signup' },
+    { id: 'join-nike', label: 'JOIN NIKE+', url: '/nike-plus' },
+    { id: 'site-feedback', label: 'SITE FEEDBACK', url: '/feedback' },
+  ],
+  sections: [
     {
       title: 'GET HELP',
       links: [
