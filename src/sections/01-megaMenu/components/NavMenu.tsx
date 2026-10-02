@@ -21,7 +21,7 @@ const NavMenu = () => {
                 {category.label}
               </NavigationMenuTrigger>
               {category.sections && (
-                <NavigationMenuContent className='flex justify-center'>
+                <NavigationMenuContent className='flex justify-center h-111'>
                   <ul
                     className={cn(
                       'w-fit',
